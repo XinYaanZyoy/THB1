@@ -1,0 +1,94 @@
+﻿body {
+	background-image: url("../assets/mathysics_GandB.webp");
+	overflow: hidden;
+}
+
+/* cam */
+.scene {
+	perspective: 1000px;
+}
+
+/* cube */
+.cube {
+	transform-style: preserve-3d;
+	transform: rotateX(-45deg) rotateY(45deg) rotateZ(0deg);
+}
+
+
+.cube-layer {
+	transform-style: preserve-3d;
+}
+.sub_cube {
+	transform-style: preserve-3d;
+	transform-origin: 75px 75px;
+}
+
+.sub_cube-face {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.075);
+	border-radius: 25%;
+	transform-style: preserve-3d;
+}
+
+.face-u { transform: rotateX(90deg)  translateZ(75px); }
+.face-f { transform:                 translateZ(75px); }
+.face-r { transform: rotateY(90deg)  translateZ(75px); }
+.face-l { transform: rotateY(-90deg) translateZ(75px); }
+.face-b { transform: rotateY(180deg) translateZ(75px); }
+.face-d { transform: rotateX(-90deg) translateZ(75px); }
+
+
+.sub_cube-corner-position-0 { transform: translate3d(150px, -150px, 150px); }
+.sub_cube-corner-position-1 { transform: translate3d(-150px, -150px, 150px) rotateY(-90deg); }
+.sub_cube-corner-position-2 { transform: translate3d(150px, -150px, -150px) rotateY(90deg); }
+.sub_cube-corner-position-3 { transform: translate3d(-150px, -150px, -150px) rotateY(180deg); }
+.sub_cube-corner-position-4 { transform: translate3d(150px, 150px, 150px) rotateX(180deg) rotateY(90deg); }
+.sub_cube-corner-position-5 { transform: translate3d(-150px, 150px, 150px) rotateX(180deg) rotateY(180deg); }
+.sub_cube-corner-position-6 { transform: translate3d(150px, 150px, -150px) rotateX(180deg); }
+.sub_cube-corner-position-7 { transform: translate3d(-150px, 150px, -150px) rotateX(180deg) rotateY(-90deg); }
+
+.sub_cube-edge-position-0  { transform: translate3d(0px, -150px, 150px); }
+.sub_cube-edge-position-1  { transform: translate3d(-150px, -150px, 0px) rotateY(-90deg); }
+.sub_cube-edge-position-2  { transform: translate3d(150px, -150px, 0px) rotateY(90deg); }
+.sub_cube-edge-position-3  { transform: translate3d(0px, -150px, -150px) rotateY(180deg); }
+.sub_cube-edge-position-4  { transform: translate3d(0px, 150px, 150px) rotateX(180deg) rotateY(180deg); }
+.sub_cube-edge-position-5  { transform: translate3d(-150px, 150px, 0px) rotateX(180deg) rotateY(-90deg); }
+.sub_cube-edge-position-6  { transform: translate3d(150px, 150px, 0px) rotateX(180deg) rotateY(90deg); }
+.sub_cube-edge-position-7  { transform: translate3d(0px, 150px, -150px) rotateX(180deg); }
+.sub_cube-edge-position-8  { transform: translate3d(150px, 0px, 150px) rotateX(-90deg) rotateY(90deg); }
+.sub_cube-edge-position-9  { transform: translate3d(-150px, 0px, 150px) rotateX(-90deg) rotateY(-90deg); }
+.sub_cube-edge-position-10 { transform: translate3d(150px, 0px, -150px) rotateX(90deg) rotateY(90deg); }
+.sub_cube-edge-position-11 { transform: translate3d(-150px, 0px, -150px) rotateX(90deg) rotateY(-90deg); }
+
+.sub_cube-middle-r  { transform: translate3d(150px, 0px, 0px); }
+.sub_cube-middle-l  { transform: translate3d(-150px, 0px, 0px); }
+.sub_cube-middle-f  { transform: translate3d(0px, 0px, 150px); }
+.sub_cube-middle-b  { transform: translate3d(0px, 0px, -150px); }
+.sub_cube-middle-u  { transform: translate3d(0px, -150px, 0px); }
+.sub_cube-middle-d  { transform: translate3d(0px, 150px, 0px); }
+
+
+/* stickers */
+.sub_cube-sticker {
+	border-radius: 40%;
+}
+.sticker-u{
+	background-color: white;
+}
+.sticker-d{
+	background-color: yellow;
+}
+.sticker-f{
+	background-color: green;
+}
+.sticker-b{
+	background-color: blue;
+}
+.sticker-r{
+	background-color: red;
+}
+.sticker-l{
+	background-color: orangered;
+}
